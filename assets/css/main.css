@@ -200,6 +200,9 @@ input, select, textarea {
 
 	h2, h3, h4, h5, h6 {
 		margin: 0 0 2em 0;
+		overflow-wrap: break-word; /* Enable word wrapping */
+		word-wrap: break-word;
+		hyphens: auto;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -220,7 +223,7 @@ input, select, textarea {
 		text-transform: uppercase;
 		font-weight: 900;
 		line-height: 0;
-		letter-spacing: 0.35em;
+		letter-spacing: 0.2em;
 		color: #fff
 	}
 
@@ -228,10 +231,10 @@ input, select, textarea {
 		font-size: 2.75em;
 		text-transform: uppercase;
 		text-align: center;
-		margin: 0.1;
+		margin: 0.5em 0;
 		font-weight: 700;
-		line-height: 0em;
-		letter-spacing: 0.35em;
+		line-height: 1.2em;
+		letter-spacing: 0.2em;
 		color: #66c57c 
 	}
 
@@ -261,6 +264,14 @@ input, select, textarea {
 			font-size: 0.8em;
 		}
 
+	}
+
+	@media screen and (max-width: 768px) {
+		h4 {
+			font-size: 1.8em; /* Smaller font size for narrow screens */
+			line-height: 1.2em; /* Ensure spacing is still appropriate */
+			letter-spacing: 0.1em; /* Adjust letter spacing */
+		}
 	}
 
 	sub {
@@ -3222,11 +3233,6 @@ input, select, textarea {
     display: inline-block;
 }
 
-/* Hover Effects */
-.project-navigation .button:hover {
-    transform: translateY(-2px); /* Slight upward motion */
-}
-
 /* Specific Button Positions */
 .project-navigation .previous {
     align-self: flex-start; /* Align to the left */
@@ -3249,7 +3255,6 @@ input, select, textarea {
         text-align: center;
     }
 }
-
 
 /* Main */
 
