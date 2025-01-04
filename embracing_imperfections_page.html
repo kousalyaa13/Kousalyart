@@ -57,9 +57,16 @@
 				<div class="row">
 					<!-- Image Column -->
 					<div class="about_col1">
-						<img src="images/imperfections1.JPG" alt="Creative portrait showcasing imperfections">
-					</div>
+					
+						<!-- Image Slider -->
+						<div class="image-slider" data-images="imperfections-images">
+							<img id="slider-image" src="images/imperfections1.JPG"/>
+							<button class="slider-btn prev-btn" onclick="showPrevImage()">&#10094;</button>
+							<button class="slider-btn next-btn" onclick="showNextImage()">&#10095;</button>
+						</div>
+						
 
+					</div>
 					<!-- Text Column -->
 					<div class="about_col2">
 						<h2>Project Type</h2>
@@ -97,6 +104,7 @@
 
 
 		<!-- Scripts -->
+			<script src="assets/js/carousel.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>

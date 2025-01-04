@@ -3179,7 +3179,7 @@ input, select, textarea {
 /* Container Styling */
 #image_info {
     margin: 0 auto; /* Center the container */
-    padding: 2em; /* Add padding around the container */
+    padding: 5em; /* Add padding around the container */
     max-width: 1700px; /* Optional: Restrict max width */
 }
 
@@ -3219,6 +3219,60 @@ input, select, textarea {
 
 }
 
+/* Image Slider Container */
+.image-slider {
+    display: flex;
+    align-items: center; /* Vertically align buttons with the image */
+    justify-content: center; /* Center-align content */
+    gap: 13px; /* Spacing between buttons and image */
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+/* Button Styling */
+.slider-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin: 0; /* Remove auto margin for centering */
+}
+
+/* Hover Effect */
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Positioning for Buttons */
+.prev-btn {
+    order: 1; /* Place before the image */
+}
+
+.image-slider img {
+    order: 2; /* Image in the center */
+}
+
+.next-btn {
+    order: 3; /* Place after the image */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .image-slider {
+        flex-direction: column; /* Stack buttons and image vertically */
+        gap: 15px; /* Adjust spacing for smaller screens */
+    }
+
+    .slider-btn {
+        width: 100%; /* Full-width buttons */
+        text-align: center;
+    }
+}
+
 /* Navigation Buttons Container */
 .project-navigation {
     display: flex;
@@ -3231,6 +3285,14 @@ input, select, textarea {
     font-size: 0.8em;
     border-radius: 5px;
     display: inline-block;
+	transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+
+}
+
+/* Hover Effect */
+.project-navigation :hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 /* Specific Button Positions */
@@ -3308,10 +3370,10 @@ input, select, textarea {
 			#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
-				margin-top: 5em;
+				margin-top: 2em;
 				list-style: none;
 				font-size: 0.8em;
-				color: rgba(88, 88, 88, 0.5);
+				color: #c1c0c0
 			}
 
 				#footer > .inner .copyright a {
