@@ -99,7 +99,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #080808;
+		color: #fff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -116,7 +117,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #585858;
+		color: #fff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -2837,7 +2838,7 @@ input, select, textarea {
 		#header .logo {
 			display: block;
 			border-bottom: 0;
-			color: inherit;
+			color: #ee5f81;
 			font-weight: 900;
 			letter-spacing: 0.35em;
 			margin: 0 0 2.5em 0;
@@ -3150,6 +3151,50 @@ input, select, textarea {
 			opacity: 1;
 		}
 
+/* Image Pages */
+/* Container Styling */
+#image_info {
+    color: #7bd0c1;
+    margin: 0 auto; /* Center the container */
+    padding: 2em; /* Add padding around the container */
+    max-width: 1200px; /* Optional: Restrict max width */
+}
+
+/* Row Styling */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align content vertically */
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+/* Image Column */
+.about_col1 {
+    flex-basis: 45%; /* Adjust width as needed */
+    padding: 1em; /* Add padding inside the column */
+}
+
+.about_col1 img {
+    width: 100%;
+}
+
+/* Text Column */
+.about_col2 {
+    flex-basis: 50%; /* Adjust width as needed */
+    padding: 1em; /* Add padding inside the column */
+    color: #fff; /* Adjust text color */
+}
+
+.about_col2 h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.about_col2 p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
 /* Main */
 
 	#main {
@@ -3168,7 +3213,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: #f6f6f6;
+		background-color: #080808;
 	}
 
 		#footer > .inner {
