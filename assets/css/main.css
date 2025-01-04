@@ -199,7 +199,6 @@ input, select, textarea {
 		}
 
 	h2, h3, h4, h5, h6 {
-		margin: 0 0 2em 0;
 		overflow-wrap: break-word; /* Enable word wrapping */
 		word-wrap: break-word;
 		hyphens: auto;
@@ -210,6 +209,7 @@ input, select, textarea {
 		}
 
 	h2 {
+		margin: 0 0 2em 0;
 		font-size: 1.1em;
 		text-transform: uppercase;
 		font-weight: 900;
@@ -219,6 +219,7 @@ input, select, textarea {
 	}
 
 	h3 {
+		margin: 0 0 2em 0;
 		font-size: 1.1em;
 		text-transform: uppercase;
 		font-weight: 900;
@@ -228,12 +229,12 @@ input, select, textarea {
 	}
 
 	h4 {
+		margin: 0 0 0.5em 0;
 		font-size: 2.75em;
 		text-transform: uppercase;
 		text-align: center;
-		margin: 0.5em 0;
 		font-weight: 700;
-		line-height: 1.2em;
+		line-height: 1.4em;
 		letter-spacing: 0.2em;
 		color: #66c57c 
 	}
