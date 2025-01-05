@@ -2870,6 +2870,12 @@ input, select, textarea {
 		#header .logo .symbol img {
 			width: 3in; /* Default size for any size screens */
 		}
+
+		@media (max-width: 768px) {
+			.symbol_title_pages img {
+				width: 2in; /* Fit smaller screens */
+			}
+		}
 		
 		/* Welcome Page Title */
 		.symbol_welcome_page img {
