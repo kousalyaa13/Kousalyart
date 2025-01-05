@@ -163,7 +163,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
-		line-height: 0;
+		line-height: 1.6;
 
 	}
 
@@ -2091,6 +2091,25 @@ input, select, textarea {
 			padding: 1em 0 0 1em;
 		}
 
+	/* Footer Icon Styling */
+	#footer .icons a {
+		font-size: 1.5em; /* Increase size of icons */
+		margin: 0 15px; /* Add spacing between icons */
+		color: #ffffff; /* Set icon color */
+		transition: transform 0.3s ease; /* Smooth hover effect */
+	}
+
+	#footer .icons a:hover {
+		transform: scale(1.2); /* Slightly enlarge icons on hover */
+		color: #f39c12; /* Change color on hover */
+	}
+
+	@media (max-width: 768px) {
+		#footer .icons a {
+			font-size: 1em; /* Smaller size for smaller screens */
+		}
+	}	
+
 /* Form */
 
 	form {
@@ -3223,6 +3242,30 @@ input, select, textarea {
 			background-color: #6f6f6f; /* Lighter hover background for dropdown items */
 		}
 				
+/* About Me Page */
+/* Container Styling */
+.about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Adds space between the text and image */
+    padding: 20px;
+}
+
+.about-text {
+    flex: 1; /* Allows the text to take up more space */
+}
+
+.about-image img {
+    width: 270px; /* Adjust the size as needed */
+    height: 270px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures proper cropping inside the circle */
+    border: 3px solid #ddd; /* Optional border for aesthetics */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a polished look */
+	margin-top: 150px; /* Pushes the image down slightly */
+
+}
 
 /* Image Pages */
 /* Container Styling */
