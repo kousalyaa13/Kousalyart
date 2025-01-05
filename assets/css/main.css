@@ -168,13 +168,13 @@ input, select, textarea {
 	}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 2.3em;
 		text-transform: uppercase;
 		font-weight: 700;
 		line-height: 1;
 		margin: 0 0 1em 0;
 		letter-spacing: 0em;
-		color: #ae85ca 
+		color: #fecd71
 	}
 
 		h1 a {
@@ -215,12 +215,12 @@ input, select, textarea {
 		font-weight: 900;
 		line-height: 0;
 		letter-spacing: 0.35em;
-		color: #ae85ca
+		color: #795c9c
 	}
 
 	h3 {
 		margin: 0 0 2em 0;
-		font-size: 1.1em;
+		font-size: 1.2em;
 		text-transform: uppercase;
 		font-weight: 900;
 		line-height: 0;
@@ -235,8 +235,8 @@ input, select, textarea {
 		text-align: center;
 		font-weight: 700;
 		line-height: 1.4em;
-		letter-spacing: 0.15em;
-		color: #376dd1 
+		letter-spacing: 0.03em;
+		color: #6396d8 
 	}
 
 	h5 {
@@ -2734,27 +2734,27 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-color: #6396d8;
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: #795c9c;
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: #d98594;
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				background-color: #fecd71;
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
+				background-color: #5b9149;
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #795c9c;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -2884,7 +2884,27 @@ input, select, textarea {
 				#header .logo .symbol img {
 					display: block;
 					width: 3in;
+					height: auto;
 				}
+			
+			/* Make the image responsive */
+			.symbol img {
+				width: 100%; /* Scale image to fit container width */
+				height: auto; /* Maintain aspect ratio */
+			}
+
+			/* Make the image responsive */
+			.symbol_title_pages img {
+				width: 7in%; /* Scale image to fit container width */
+				height: auto; /* Maintain aspect ratio */
+			}
+
+			/* Make the image responsive */
+			.symbol_welcome_page img {
+				width: 100%; /* Scale image to fit container width */
+				height: auto; /* Maintain aspect ratio */
+			}
+
 
 		#header nav {
 			position: fixed;
