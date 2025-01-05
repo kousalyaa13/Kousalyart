@@ -2662,7 +2662,7 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: none;
+					background-image: none; /* x-overlay */
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2756,6 +2756,21 @@ input, select, textarea {
 			.tiles article.style6 > .image:before {
 				background-color: #795c9c;
 			}
+
+			.tiles article.active > .image {
+				transform: scale(1.1);
+			}
+			
+			.tiles article.active > .image:before {
+				background-color: #333333;
+				opacity: 0.35;
+			}
+			
+			.tiles article.active .content {
+				max-height: 15em;
+				opacity: 1;
+			}
+			
 
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
