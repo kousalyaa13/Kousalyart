@@ -2854,77 +2854,39 @@ input, select, textarea {
 
 		}
 
-/* Header */
-
-	#header {
-		padding: 8em 0 0.1em 0 ;
-	}
-
-		#header .logo {
+	/* Header */
+		#header {
+			padding: 8em 0 0.1em 0 ;
+		}
+		
+		/* General Image Styling */
+		img {
 			display: block;
-			border-bottom: 0;
-			color: #ee5f81;
-			font-weight: 900;
-			letter-spacing: 0.35em;
-			margin: 0 0 2.5em 0;
-			text-decoration: none;
-			text-transform: uppercase;
-			display: inline-block;
+			max-width: 100%; /* Prevent overflow */
+			height: auto; /* Maintain aspect ratio */
+		}
+		
+		/* Logo - kousalyart */
+		#header .logo .symbol img {
+			width: 3in; /* Default size for any size screens */
+		}
+		
+		/* Welcome Page Title */
+		.symbol_welcome_page img {
+			width: 100%; /* Always scale to fit container width */
+			height: auto; /* Maintain aspect ratio */
 		}
 
-			#header .logo > * {
-				display: inline-block;
-				vertical-align: middle;
-			}
+		/* Description Page Titles */
+		.symbol_title_pages img {
+			width: 8in; /* Default size for larger screens */
+		}
 
-			#header .logo .symbol {
-				margin-right: 0.65em;
-			}
-
-				#header .logo .symbol img {
-					display: block;
-					width: 3in;
-					height: auto;
-				}
-			
-			/* Logo - kousalyart */
-			/* Default style for larger screens (laptops, desktops) */
-			.symbol img.logo {
-				width: 3in; /* Fixed width of 5 inches */
-				max-width: 100%; /* Prevents it from overflowing */
-				height: auto; /* Maintains the aspect ratio */
-			}
-
-			/* Media query for smaller screens (phones, tablets) */
-			@media (max-width: 768px) {
-				.symbol img.logo {
-					width: 100%; /* Resize to fit the screen width */
-					height: auto; /* Maintain aspect ratio */
-				}
-			}
-
-			/* Description Page Title */
-			/* Default style for larger screens (laptops, desktops) */
+		@media (max-width: 768px) {
 			.symbol_title_pages img {
-				width: 8in; /* Fixed width of 5 inches */
-				max-width: 100%; /* Prevents overflow */
-				height: auto; /* Maintain aspect ratio */
+				width: 100%; /* Fit smaller screens */
 			}
-
-			/* Media query for smaller screens (phones, tablets) */
-			@media (max-width: 768px) {
-				.symbol_title_pages img {
-					width: 100%; /* Resize to fit the screen width */
-					height: auto; /* Maintain aspect ratio */
-				}
-			}
-
-
-			/* Welcome to my Art Portfolio */
-			.symbol_welcome_page img {
-				width: 100%; /* Scale image to fit container width */
-				height: auto; /* Maintain aspect ratio */
-			}
+		}
 
 
 		#header nav {
