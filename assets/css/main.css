@@ -225,7 +225,7 @@ input, select, textarea {
 		font-weight: 900;
 		line-height: 0;
 		letter-spacing: 0.2em;
-		color: #fff
+		color: #ffffff
 	}
 
 	h4 {
@@ -240,11 +240,23 @@ input, select, textarea {
 	}
 
 	h5 {
-		font-size: 0.8em;
+		margin: 0 0 2em 0;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: 900;
+		line-height: 0;
+		letter-spacing: 0.2em;
+		color: #ffffff
 	}
 
 	h6 {
-		font-size: 0.8em;
+		margin: 0.5em;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: 900;
+		line-height: 0;
+		letter-spacing: 0.2em;
+		color: #b1c9e8
 	}
 
 	@media screen and (max-width: 980px) {
@@ -3041,7 +3053,6 @@ input, select, textarea {
 		visibility: hidden;
 		z-index: 10002;
 	}
-
 		#menu > .inner {
 			-moz-transition: opacity 0.45s ease;
 			-webkit-transition: opacity 0.45s ease;
@@ -3141,7 +3152,6 @@ input, select, textarea {
 			#menu > .close:hover:after {
 				opacity: 0;
 			}
-
 		@media screen and (max-width: 736px) {
 
 			#menu {
@@ -3194,6 +3204,25 @@ input, select, textarea {
 			transform: scale(1.0) rotate(0deg);
 			opacity: 1;
 		}
+	
+		#menu .dropdown {
+			list-style: circle;
+			margin-left: 20px; /* Indentation for dropdown items */
+			padding: 0;
+		}
+
+		#menu .dropdown li a {
+			padding: 0.75em 1em; /* Adjust padding for better spacing */
+			text-decoration: none;
+			color: #ffffff;
+			display: block;
+			font-size: 0.85em; /* Smaller font size for project names */
+		}
+
+		#menu .dropdown li a:hover {
+			background-color: #6f6f6f; /* Lighter hover background for dropdown items */
+		}
+				
 
 /* Image Pages */
 /* Container Styling */
