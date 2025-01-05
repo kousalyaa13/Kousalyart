@@ -2750,11 +2750,7 @@ input, select, textarea {
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #5b9149;
-			}
-
-			.tiles article.style6 > .image:before {
-				background-color: #795c9c;
+				background-color: #444e78;
 			}
 
 			.tiles article.active > .image {
