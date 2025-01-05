@@ -2887,19 +2887,40 @@ input, select, textarea {
 					height: auto;
 				}
 			
-			/* Make the image responsive */
-			.symbol img {
-				width: 100%; /* Scale image to fit container width */
-				height: auto; /* Maintain aspect ratio */
+			/* Logo - kousalyart */
+			/* Default style for larger screens (laptops, desktops) */
+			.symbol img.logo {
+				width: 3in; /* Fixed width of 5 inches */
+				max-width: 100%; /* Prevents it from overflowing */
+				height: auto; /* Maintains the aspect ratio */
 			}
 
-			/* Make the image responsive */
+			/* Media query for smaller screens (phones, tablets) */
+			@media (max-width: 768px) {
+				.symbol img.logo {
+					width: 100%; /* Resize to fit the screen width */
+					height: auto; /* Maintain aspect ratio */
+				}
+			}
+
+			/* Description Page Title */
+			/* Default style for larger screens (laptops, desktops) */
 			.symbol_title_pages img {
-				width: 7in; /* Scale image to fit container width */
+				width: 8in; /* Fixed width of 5 inches */
+				max-width: 100%; /* Prevents overflow */
 				height: auto; /* Maintain aspect ratio */
 			}
 
-			/* Make the image responsive */
+			/* Media query for smaller screens (phones, tablets) */
+			@media (max-width: 768px) {
+				.symbol_title_pages img {
+					width: 100%; /* Resize to fit the screen width */
+					height: auto; /* Maintain aspect ratio */
+				}
+			}
+
+
+			/* Welcome to my Art Portfolio */
 			.symbol_welcome_page img {
 				width: 100%; /* Scale image to fit container width */
 				height: auto; /* Maintain aspect ratio */
