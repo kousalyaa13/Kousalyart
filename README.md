@@ -4,7 +4,7 @@ Kousalyart is a personal art portfolio showcasing my artwork and creative projec
 
 ## Getting Started
 
-To view the portfolio, simply open the [kousalyaa13.github.io/Kousalyart/](kousalyaa13.github.io/Kousalyart/) web link.
+To view the portfolio, simply open the [kousalyaa13.github.io/Kousalyart/](https://kousalyaa13.github.io/Kousalyart/) web link.
 
 ## Acknowledgements
 
