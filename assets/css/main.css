@@ -163,7 +163,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
-		line-height: 1.6;
+		line-height: 1.8;
 
 	}
 
@@ -213,8 +213,9 @@ input, select, textarea {
 		font-size: 1.1em;
 		text-transform: uppercase;
 		font-weight: 900;
-		line-height: 0;
+		line-height: 1;
 		letter-spacing: 0.35em;
+		word-wrap: break-word;
 		color: #795c9c
 	}
 
@@ -2094,14 +2095,13 @@ input, select, textarea {
 	/* Footer Icon Styling */
 	#footer .icons a {
 		font-size: 1.5em; /* Increase size of icons */
-		margin: 0 15px; /* Add spacing between icons */
+		margin: 0 5px; /* Add spacing between icons */
 		color: #ffffff; /* Set icon color */
 		transition: transform 0.3s ease; /* Smooth hover effect */
 	}
 
 	#footer .icons a:hover {
 		transform: scale(1.2); /* Slightly enlarge icons on hover */
-		color: #f39c12; /* Change color on hover */
 	}
 
 	@media (max-width: 768px) {
@@ -2109,6 +2109,13 @@ input, select, textarea {
 			font-size: 1em; /* Smaller size for smaller screens */
 		}
 	}	
+
+	/* Increase icon size for mobile */
+	@media screen and (max-width: 768px) {
+		#footer ul.icons li a {
+			font-size: 24px; /* Larger size for smaller screens */
+		}
+	}
 
 /* Form */
 
@@ -2351,7 +2358,7 @@ input, select, textarea {
 	.box {
 		border-radius: 4px;
 		border: solid 1px #c9c9c9;
-		margin-bottom: 2em;
+		margin-bottom: 0em;
 		padding: 1.5em;
 	}
 
@@ -3264,8 +3271,31 @@ input, select, textarea {
     border: 3px solid #ddd; /* Optional border for aesthetics */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a polished look */
 	margin-top: 150px; /* Pushes the image down slightly */
-
 }
+
+@media screen and (max-width: 768px) {
+    .about-me-container {
+        display: flex;
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center the content */
+    }
+
+    .about-me-image {
+        order: 2; /* Move image below the text */
+        width: 80%; /* Make the image smaller */
+        max-width: 300px; /* Prevent it from getting too large */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Ensure the image is circular */
+        margin-top: -200px; /* Add spacing above the image */
+    }
+
+    .about-me-text {
+        order: 1; /* Ensure text appears above the image */
+        text-align: justify; /* Improve text readability */
+        margin-bottom: -500px; /* Add spacing below text */
+    }
+}
+
 
 /* Image Pages */
 /* Container Styling */
@@ -3304,7 +3334,7 @@ input, select, textarea {
 
 .about_col2 h1, .about_col2 h2 {
     font-size: 1.2em; /* Adjust heading size */
-    margin-bottom: 0.7em;
+    margin-bottom: 0em;
 }
 
 .about_col2 p {
@@ -3393,7 +3423,7 @@ input, select, textarea {
     }
 
     .project-navigation .button {
-        margin-bottom: 1em;
+        margin-bottom: 0em;
         width: 100%;
         text-align: center;
     }
@@ -3411,14 +3441,26 @@ input, select, textarea {
 			}
 
 		}
+	
+		#main .inner {
+			width: 90%; /* Reduce the content width for better spacing */
+			max-width: 600px; /* Set a max width for readability */
+			margin: 0 auto; /* Center the content */
+			padding: 10px; /* Add padding for better spacing */
+		}
+		
 
 /* Footer */
 
 	#footer {
 		margin-top: 0; /* Remove any top margin */
-		padding-top: 0; /* Remove any top padding */
+		padding-top: 0px; /* Remove any top padding */
 		background-color: #080808;
 	}
+		#footer .inner {
+		margin-top: 0; /* Remove inner container margin */
+		padding-top: 0; /* Remove extra padding if present */
+		}
 
 		#footer > .inner {
 			display: -moz-flex;
