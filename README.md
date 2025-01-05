@@ -1,30 +1,22 @@
-Phantom by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Kousalyart - Art Portfolio
 
+Kousalyart is a personal art portfolio showcasing my artwork and creative projects. Built using a responsive design template, the website features a gallery of art pieces, project descriptions, and a dynamic navigation system for easy exploration.
 
-This is Phantom, a simple design built around a grid of large, colorful, semi-interactive
-image tiles (of which you can have as many or as few as you like). Makes use of some
-SVG and animation techniques I've been experimenting with on that other project of mine
-you may have heard about (https://carrd.co), and includes a handy generic page for whatever.
+## Getting Started
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+To view the portfolio, simply open the `kousalyaa13.github.io/Kousalyart/` web link.
 
-(* = not included)
+## Acknowledgements
 
-AJ
-aj@lkn.io | @ajlkn
+This project was built using the **Phantom template** by [HTML5 UP](https://html5up.net), a free template designed for personal and commercial use under the CCA 3.0 license.
 
+- **Template Design**: HTML5 UP (html5up.net)
+- **Icons**: Font Awesome (fontawesome.io)
+- **Scripts**: jQuery (jquery.com)
+- **Demo Images**: Unsplash (unsplash.com)
 
-Credits:
+## License
 
-	Demo Images:
-		Unsplash (unsplash.com)
+The template is licensed under the [CCA 3.0](https://html5up.net/license) license. All modifications and custom content within this portfolio are my own creations and are free to use or share with proper attribution.
 
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+---
