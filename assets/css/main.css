@@ -2895,7 +2895,7 @@ input, select, textarea {
 
 			/* Make the image responsive */
 			.symbol_title_pages img {
-				width: 7in%; /* Scale image to fit container width */
+				width: 7in; /* Scale image to fit container width */
 				height: auto; /* Maintain aspect ratio */
 			}
 
