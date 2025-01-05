@@ -235,7 +235,7 @@ input, select, textarea {
 		text-align: center;
 		font-weight: 700;
 		line-height: 1.4em;
-		letter-spacing: 0.2em;
+		letter-spacing: 0.15em;
 		color: #66c57c 
 	}
 
@@ -3180,45 +3180,59 @@ input, select, textarea {
 /* Container Styling */
 #image_info {
     margin: 0 auto; /* Center the container */
-    padding: 5em; /* Add padding around the container */
-    max-width: 1700px; /* Optional: Restrict max width */
+    padding: 4em; /* Add padding around the container */
+    max-width: 1400px; /* Restrict max width */
 }
 
 /* Row Styling */
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Ensure space between columns */
     align-items: center; /* Align content vertically */
     flex-wrap: wrap; /* Ensure responsiveness */
+    gap: 1em; /* Add spacing between flex items */
 }
 
 /* Image Column */
 .about_col1 {
-    flex-basis: 45%; /* Adjust width as needed */
+    flex-basis: calc(50% - 1em); /* Adjust width to fit with padding/gap */
     padding: 1em; /* Add padding inside the column */
 }
 
 .about_col1 img {
     width: 100%;
+    max-width: 100%; /* Prevent stretching */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Text Column */
 .about_col2 {
-    flex-basis: 50%; /* Adjust width as needed */
+    flex-basis: calc(50% - 1em); /* Adjust width to fit with padding/gap */
     padding: 1em; /* Add padding inside the column */
 }
 
-.about_col2 h1 {
-    font-size: 2em;
+.about_col2 h1, .about_col2 h2 {
+    font-size: 1.2em; /* Adjust heading size */
     margin-bottom: 0.5em;
 }
 
 .about_col2 p {
-	margin: 0.5em 0 2em 0;
-    font-size:1em;
-    line-height: 1.2;
-
+    margin: 0.5em 0 2em 0; /* Add spacing around paragraphs */
+    font-size: 1em; /* Set font size */
+    line-height: 1.4; /* Improve readability */
 }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+
+    .about_col1, .about_col2 {
+        flex-basis: 100%; /* Full width for both columns */
+    }
+}
+
 
 /* Image Slider Container */
 .image-slider {
@@ -3335,7 +3349,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		margin-top: 0; /* Remove any top margin */
+		padding-top: 0; /* Remove any top padding */
 		background-color: #080808;
 	}
 
@@ -3371,7 +3386,7 @@ input, select, textarea {
 			#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
-				margin-top: 2em;
+				margin-top: 1.5em;
 				list-style: none;
 				font-size: 0.8em;
 				color: #c1c0c0

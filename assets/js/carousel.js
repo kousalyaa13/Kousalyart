@@ -1,14 +1,36 @@
 // carousel.js
 // List of image URLs
 const imageLists = {
-    "imperfections-images": [
+    "embracing-imperfections-images": [
         "images/imperfections1.JPG",
         "images/imperfectionsb&w.jpg",
         "images/imperfectionscloseup.JPG.png"
     ],
-    "lung-images": [
+    "lung-malware-images": [
         "images/lung1.JPG",
         "images/lung2.webp"
+    ],
+    "network-society-images": [
+        "images/citycircuit1.JPG",
+        "images/circuitcity2.webp"
+    ],
+    "barcode-harvest-images": [
+        "images/oranges1.JPG",
+        "images/harvest2.webp"
+    ],
+    "feminine-resonance-images": [
+        "images/peargirl1.JPG",
+        "images/drapery.jpg",
+        "images/peargirl2.jpg"
+    ],
+    "ties-that-bind-images": [
+        "images/teacups1.JPG",
+        "images/teacups2.jpg"
+    ],
+    "wired-emotions-images": [
+        "images/wiregirl1.png",
+        "images/wiregirlbw.jpg",
+        "images/bgwiregirl.JPG"
     ]
 };
 
