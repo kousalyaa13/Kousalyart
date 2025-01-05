@@ -90,3 +90,7 @@ document.querySelector(".prev-btn")?.addEventListener("click", () => {
 // Initialize the carousel
 updateImage(); // Ensure the first image is displayed right away
 startAutoSwitch();
+
+console.log("Slider Container:", sliderContainer);
+console.log("Image List Name:", imageListName);
+console.log("Images Array:", images);

@@ -215,7 +215,7 @@ input, select, textarea {
 		font-weight: 900;
 		line-height: 0;
 		letter-spacing: 0.35em;
-		color: #c75b9b
+		color: #ae85ca
 	}
 
 	h3 {
@@ -236,7 +236,7 @@ input, select, textarea {
 		font-weight: 700;
 		line-height: 1.4em;
 		letter-spacing: 0.15em;
-		color: #66c57c 
+		color: #376dd1 
 	}
 
 	h5 {
@@ -2883,8 +2883,7 @@ input, select, textarea {
 
 				#header .logo .symbol img {
 					display: block;
-					width: 2em;
-					height: 2em;
+					width: 3in;
 				}
 
 		#header nav {
@@ -3213,13 +3212,13 @@ input, select, textarea {
 
 .about_col2 h1, .about_col2 h2 {
     font-size: 1.2em; /* Adjust heading size */
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
 }
 
 .about_col2 p {
     margin: 0.5em 0 2em 0; /* Add spacing around paragraphs */
     font-size: 1em; /* Set font size */
-    line-height: 1.4; /* Improve readability */
+    line-height: 1.5; /* Improve readability */
 }
 
 /* Responsive Styling */
@@ -3232,7 +3231,6 @@ input, select, textarea {
         flex-basis: 100%; /* Full width for both columns */
     }
 }
-
 
 /* Image Slider Container */
 .image-slider {
@@ -3275,60 +3273,36 @@ input, select, textarea {
     order: 3; /* Place after the image */
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .image-slider {
-        flex-direction: column; /* Stack buttons and image vertically */
-        gap: 15px; /* Adjust spacing for smaller screens */
-    }
-
-    .slider-btn {
-        width: 100%; /* Full-width buttons */
-        text-align: center;
-    }
-}
-
-/* Navigation Buttons Container */
+/* Navigation Buttons Container (Ensure this section is separate if unrelated) */
 .project-navigation {
     display: flex;
-    justify-content: space-between; /* Positions buttons at the corners */
+    justify-content: space-between;
     align-items: center;
 }
 
-/* Button Styles */
-.project-navigation .button {
-    font-size: 0.8em;
-    border-radius: 5px;
-    display: inline-block;
-	transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
-
+.project-navigation .button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
 }
 
-/* Hover Effect */
-.project-navigation :hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-}
-
-/* Specific Button Positions */
 .project-navigation .previous {
-    align-self: flex-start; /* Align to the left */
+    align-self: flex-start;
 }
 
 .project-navigation .next {
-    align-self: flex-end; /* Align to the right */
+    align-self: flex-end;
 }
 
-/* Responsive Design */
+/* Responsive Design for Project Navigation */
 @media (max-width: 768px) {
     .project-navigation {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center buttons */
+        flex-direction: column;
+        align-items: center;
     }
 
     .project-navigation .button {
-        margin-bottom: 1em; /* Add space between buttons */
-        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 1em;
+        width: 100%;
         text-align: center;
     }
 }
